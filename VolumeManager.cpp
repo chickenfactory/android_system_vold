@@ -167,7 +167,7 @@ int VolumeManager::listVolumes(SocketClient *cli) {
         const char *uuid;
         uuid = (*i)->getUuid();
         if (!uuid) {
-            uuid = "0";
+            uuid = "-";
         }
         char *buffer;
         asprintf(&buffer, "%s %s %d %s",
